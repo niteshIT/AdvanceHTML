@@ -24,8 +24,8 @@
       <header>
         <h1 class="text-center">Trello-like Task Management</h1>
       </header>
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col">
           <h3>To Do</h3>
           <div
             id="todo"
@@ -34,8 +34,8 @@
             ondragover="allowDrop(event)"
           ></div>
         </div>
-        <div class="col-md-4">
-          <h3 class="header">In Progress</h3>
+        <div class="col-md-4 col">
+          <h3>In Progress</h3>
           <div
             id="inprogress"
             class="task-list"
@@ -54,7 +54,9 @@
         </div>
       </div>
       <div class="text-center my-4">
-        <button class="btn btn-primary" onclick="showForm()">Add Task</button>
+        <button class="button" onclick="showForm()">
+          <strong>ADD TASK</strong>
+        </button>
       </div>
 
       <div
